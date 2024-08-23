@@ -5,7 +5,7 @@ const gallery = document.querySelector(".gallery");
 const categoryList = [];
 
 /** Suppression projets présents dans le html **/
-document.querySelector(".gallery").innerHTML = "";
+gallery.innerHTML = "";
 
 function genererProjets(projets) {
         /** création de tous les projets **/
