@@ -46,10 +46,12 @@ let categorySet = new Set(categoryList);
 categorySet.forEach(category => {
     let boutonFiltre = document.createElement("button");
     boutonFiltre.textContent = `${category}`;
-    boutonFiltre.classList.add('button');
+    boutonFiltre.classList.add('button', 'filtre-projet');
     boutonsConteneur.appendChild(boutonFiltre);
 })
-    
+// boutonsConteneur.id = "boutons-conteneur";
+// console.log(boutonsConteneur);
+
 gallery.parentNode.insertBefore(boutonsConteneur, gallery);
 
 /** Filtrage projets selon boutons  */
@@ -79,4 +81,45 @@ boutons.forEach(bouton => {
 })
 
 
+/********** Logout *******/
+/** Vérification présence token  */
+const getauthToken = localStorage.getItem("token");
+console.log(getauthToken);
 
+const bandeau = document.querySelector(".bandeau");
+console.log(bandeau);
+
+const logout = document.getElementById("logout");
+console.log(logout);
+
+const modifierProjet = document.getElementById("modifier-projet");
+console.log(modifierProjet);
+
+const modifierProjetDiv = document.querySelector(".projet-modifier-inactif");
+
+
+if (getauthToken) {
+    /** ajout bandeau noir et logout */
+    bandeau.classList.add("bandeau-visible");
+    logout.textContent = "Logout";
+    /** ajout icone et txt modifier Mes Projets */
+    modifierProjet.classList.add("projet-modifier-actif");
+    modifierProjetDiv.classList.remove("projet-modifier-inactif");
+    /**suppression boutons Filtres */
+    if (boutonsConteneur) {
+        boutonsConteneur.style.display = "none";
+    }
+
+    /** Déconnexion */
+    logout.addEventListener("click", function() {
+        localStorage.removeItem("token");
+        bandeau.classList.remove("bandeau-visible");
+        logout.textContent = "Login";
+        modifierProjet.classList.remove("projet-modifier-actif");
+        modifierProjetDiv.classList.add("projet-modifier-inactif");
+        // logout.removeEventListener("click")
+    })
+    
+} else {
+    console.log("le token n'est pas présent")
+}

@@ -12,18 +12,22 @@
 	<script type="module" src="projets.js"></script>
 </head>
 <body>
-<header>
+	<div class="bandeau">
+		<img src="./assets/icons/modifier.svg" alt="mode edition">
+		<p>Mode édition</p>
+	</div>
+<header class="conteneur">
 	<h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
 	<nav>
 		<ul>
 			<li><a href="./index.html"><span>projets</span></a></li>
 			<li>contact</li>
-			<li><a href="./login.html">login</a></li>
+			<li><a href="./login.html" id="logout">login</a></li>
 			<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
 		</ul>
 	</nav>
 </header>
-<main>
+<main class="conteneur">
 	<section id="introduction">
 		<figure>
 			<img src="./assets/images/sophie-bluel.png" alt="">
@@ -36,7 +40,13 @@
 		</article>
 	</section>
 	<section id="portfolio">
-		<h2>Mes Projets</h2>
+		<div id="modifier-projet">
+			<h2>Mes Projets</h2>
+			<div class="projet-modifier-inactif">
+				<img src="./assets/icons/modifier-dark.svg" alt="mode edition">
+				<p>Mode édition</p>
+			</div>
+		</div>
 		<div class="gallery">
 			<figure>
 				<img src="assets/images/abajour-tahina.png" alt="Abajour Tahina">
@@ -106,5 +116,6 @@
 		</ul>
 	</nav>
 </footer>
+<script src="./edition.js"></script>
 </body>
 </html>

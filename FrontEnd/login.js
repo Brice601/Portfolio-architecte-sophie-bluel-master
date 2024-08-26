@@ -1,3 +1,5 @@
+// import { boutonsConteneur } from "./projets.js";
+
 const formulaireLogin = document.querySelector(".form");
 formulaireLogin.addEventListener("submit",async function (event) {
     event.preventDefault();
@@ -28,7 +30,7 @@ formulaireLogin.addEventListener("submit",async function (event) {
             const authToken = data.token;
             // console.log(authToken);
             localStorage.setItem("token", authToken);
-                /** Un renvoi vers page d'acceuil */
+            //     /** Un renvoi vers page d'accueil */
             window.location.href = "./index.html";
         }else if (reponse.status === 401) {
             // console.error("connexion non autorisée")
@@ -46,8 +48,7 @@ formulaireLogin.addEventListener("submit",async function (event) {
         // console.error("erreur lors de la requête", error)
         alert("Erreur lors de la requête. Veuillez réessayer plus tard.")
     }
-    
-})
+});
 
 
 
