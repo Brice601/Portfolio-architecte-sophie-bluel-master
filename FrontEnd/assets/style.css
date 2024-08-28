@@ -354,7 +354,7 @@ h3 {
 	height: 21px;
 }
 
-.modal-affichage {
+.modal-affichage, .affichage-modale {
 	display: none;
 }
 
