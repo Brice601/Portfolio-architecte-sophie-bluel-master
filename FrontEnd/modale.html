@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Sophie Bluel - Architecte d'intérieur</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="./assets/style.css">
+	<script type="module" src="projets.js"></script>
+</head>
+<body>
+<aside id="modale" class="modal">
+    <div class="modal-wrapper">
+        <div class="modal-ajouterPhoto">
+            <img src="./assets/icons/croix.svg" alt="fermer modale" class="modal-close">
+            <h3>Galerie photo</h3>
+            <div class="modal-gallery">
+                <figure class="modal-projet">
+                    <img src="assets/images/abajour-tahina.png" alt="Abajour Tahina" class="modal-projet">
+                    <img src="./assets/icons/trash-can-solid.svg" alt="poubelle" class="trash"> 
+                </figure>
+                <figure class="modal-projet">
+                    <img src="assets/images/abajour-tahina.png" alt="Abajour Tahina" class="modal-projet">
+                    <img src="./assets/icons/trash-can-solid.svg" alt="poubelle" class="trash"> 
+                </figure>
+                <figure class="modal-projet">
+                    <img src="assets/images/abajour-tahina.png" alt="Abajour Tahina" class="modal-projet">
+                    <img src="./assets/icons/trash-can-solid.svg" alt="poubelle" class="trash"> 
+                </figure>
+                <figure class="modal-projet">
+                    <img src="assets/images/abajour-tahina.png" alt="Abajour Tahina" class="modal-projet">
+                    <img src="./assets/icons/trash-can-solid.svg" alt="poubelle" class="trash"> 
+                </figure>
+                <figure class="modal-projet">
+                    <img src="assets/images/abajour-tahina.png" alt="Abajour Tahina" class="modal-projet">
+                    <img src="./assets/icons/trash-can-solid.svg" alt="poubelle" class="trash"> 
+                </figure>
+                <figure class="modal-projet">
+                    <img src="assets/images/abajour-tahina.png" alt="Abajour Tahina" class="modal-projet">
+                    <img src="./assets/icons/trash-can-solid.svg" alt="poubelle" class="trash"> 
+                </figure>
+                <figure class="modal-projet">
+                    <img src="assets/images/abajour-tahina.png" alt="Abajour Tahina" class="modal-projet">
+                    <img src="./assets/icons/trash-can-solid.svg" alt="poubelle" class="trash"> 
+                </figure>
+                <figure class="modal-projet">
+                    <img src="assets/images/abajour-tahina.png" alt="Abajour Tahina" class="modal-projet">
+                    <img src="./assets/icons/trash-can-solid.svg" alt="poubelle" class="trash"> 
+                </figure>
+                <figure class="modal-projet">
+                    <img src="assets/images/abajour-tahina.png" alt="Abajour Tahina" class="modal-projet">
+                    <img src="./assets/icons/trash-can-solid.svg" alt="poubelle" class="trash"> 
+                </figure>
+                <figure class="modal-projet">
+                    <img src="assets/images/abajour-tahina.png" alt="Abajour Tahina" class="modal-projet">
+                    <img src="./assets/icons/trash-can-solid.svg" alt="poubelle" class="trash"> 
+                </figure>
+                <figure class="modal-projet">
+                    <img src="assets/images/abajour-tahina.png" alt="Abajour Tahina" class="modal-projet">
+                    <img src="./assets/icons/trash-can-solid.svg" alt="poubelle" class="trash"> 
+                </figure>
+                <figure class="modal-projet">
+                    <img src="assets/images/abajour-tahina.png" alt="Abajour Tahina" class="modal-projet">
+                    <img src="./assets/icons/trash-can-solid.svg" alt="poubelle" class="trash"> 
+                </figure>  
+            </div>
+            <hr>
+            <button class="button">Ajouter une photo</button>
+        </div>
+        <div id="modal-ajouter-photo" class="modal-ajouterPhoto modal-affichage">
+            <img src="./assets/icons/arrow-left.svg" alt="retour arrière" class="modal-retour">
+            <img src="./assets/icons/croix.svg" alt="fermer modale" class="modal-close">
+            <h3>Ajout photo</h3>
+            <div class="modal-ajout-photo">
+                <div>
+                    <img src="./assets/icons/logo-image.svg" alt="logo image">
+                    <button>+ Ajouter photo</button>
+                    <p>jpg, png : 4mo max</p>
+                </div>
+                <form action="#" method="post" class="form">
+                    <label for="text">Titre</label>
+                    <input type="text" name="titre" id="titre">
+                    <label for="categorie">Catégorie</label>
+                    <select name="categorie" id="categorie">
+                        <option value=""></option>
+                        <option value="objets">Objets</option>
+                        <option value="appartements">Appartements</option>
+                        <option value="hotels-restaurants">Hotels & restaurants</option>
+                    </select>
+                </form>
+            </div>
+            <hr>
+            <button type="submit" class="button">Valider</button>
+        </div>
+    </div>
+</aside>
+
+<script src="./modale.js"></script>
+</body>
+</html>

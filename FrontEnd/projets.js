@@ -81,7 +81,7 @@ boutons.forEach(bouton => {
 })
 
 
-/********** Logout *******/
+/********** Edition Login Logout *******/
 /** Vérification présence token  */
 const getauthToken = localStorage.getItem("token");
 console.log(getauthToken);
