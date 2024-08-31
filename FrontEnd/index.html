@@ -30,7 +30,7 @@
 <main class="conteneur">
 	<aside id="modale" class="modal affichage-modale">
 		<div class="modal-wrapper js-modal-stop">
-			<div class="modal-ajouterPhoto">
+			<div id="modal-gallery" class="modal-ajouterPhoto">
 				<img src="./assets/icons/croix.svg" alt="fermer modale" class="modal-close">
 				<h3>Galerie photo</h3>
 				<div class="modal-gallery">
@@ -52,10 +52,10 @@
 					</figure>
 				</div>
 				<hr>
-				<button class="button">Ajouter une photo</button>
+				<button id="ajout-photo-bouton" class="button"><a href="#modal-ajouter-photo">Ajouter une photo</a></button>
 			</div>
 			<div id="modal-ajouter-photo" class="modal-ajouterPhoto modal-affichage">
-				<img src="./assets/icons/arrow-left.svg" alt="retour arrière" class="modal-retour">
+				<a href="#modal-gallery"><img src="./assets/icons/arrow-left.svg" alt="retour arrière" class="modal-retour"></a>
 				<img src="./assets/icons/croix.svg" alt="fermer modale" class="modal-close">
 				<h3>Ajout photo</h3>
 				<div class="modal-ajout-photo">

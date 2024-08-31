@@ -107,3 +107,30 @@ poubellesList.forEach(poubelle => {
         }
     })
 });
+
+/** Gestion passage entre modales */
+    /** recupération du bouton */
+const ajoutPhotoBouton = document.getElementById("ajout-photo-bouton");
+// console.log(ajoutPhotoBouton);
+    /** Récupération de la vue de la 2ème modale */
+const modaleAjoutPhoto = document.getElementById("modal-ajouter-photo");
+// console.log(modaleAjoutPhoto);
+    /** Récupération de la vue de la 1ère modale */
+const modalegaleriePhoto = document.querySelector(".modal-wrapper > div");
+console.log(modalegaleriePhoto);
+
+ajoutPhotoBouton.addEventListener("click", ()=> {
+    modaleAjoutPhoto.classList.remove("modal-affichage");
+    modalegaleriePhoto.classList.add("modal-affichage");
+
+        /** Récupération de la vue de la 1ère modale */
+    const flecheRetour = document.querySelector(".modal-retour");
+    // console.log(flecheRetour);
+    flecheRetour.addEventListener("click", () => {
+        modalegaleriePhoto.classList.remove("modal-affichage");
+        modaleAjoutPhoto.classList.add("modal-affichage");
+    })
+
+    
+    
+})
